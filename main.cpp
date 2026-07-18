@@ -1,0 +1,1 @@
+/home/km4b7f/.config/atcoder-cli-nodejs/cpp/main.cpp

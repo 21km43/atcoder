@@ -1,0 +1,5 @@
+g++ -std=c++23 -I$HOME/atcoder/ac-library main.cpp && oj test -c ./a.out -d ./tests -S
+
+https://qiita.com/tsuzuki_takaaki/items/b77289e084a2cefabf79
+
+modint998244353
