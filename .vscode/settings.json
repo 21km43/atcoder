@@ -101,7 +101,7 @@
         "stack": "cpp",
         "text_encoding": "cpp"
     },
-"multiCommand.commands": [
+    "multiCommand.commands": [
         {
             "command": "multiCommand.saveAndRun",
             "sequence": [
@@ -141,5 +141,8 @@
     ],
     "github.copilot.enable": {
         "*": false
-    }
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true
 }
