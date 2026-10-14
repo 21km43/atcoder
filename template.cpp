@@ -1,3 +1,9 @@
+/*
+# Reference List
+- [cpprefjp](https://cpprefjp.github.io/reference.html)
+- [競プロのための標準 C++](https://zenn.dev/reputeless/books/standard-cpp-for-competitive-programming/viewer)
+*/
+
 #include <atcoder/all>
 #include <bits/stdc++.h>
 using namespace std;
