@@ -1,3 +1,47 @@
+# 2次元配列
+
+```cpp
+// int型の2次元配列(3×4要素の)の宣言
+vector<vector<int>> data(3, vector<int>(4));
+```
+
+# DP
+
+weight, valueは「Nの最大値 + 10」、dpの2つ目は「Wの最大値 + 10」
+
+```cpp
+// https://qiita.com/drken/items/a5e6fe22863b7992efdb
+#include <iostream>
+#include <climits>
+#include <algorithm>
+using namespace std;
+
+// 入力
+int n, W;
+int weight[110], value[110];
+
+// DPテーブル
+int dp[110][10010];
+
+int main() {
+  cin >> n >> W;
+  for (int i = 0; i < n; ++i) cin >> value[i] >> weight[i];
+
+  // DP初期条件: dp[0][w] = 0
+  for (int w = 0; w <= W; ++w) dp[0][w] = 0;
+
+  // DPループ
+  for (int i = 0; i < n; ++i) {
+    for (int w = 0; w <= W; ++w) {
+      if (w >= weight[i]) dp[i+1][w] = max(dp[i][w-weight[i]] + value[i], dp[i][w]);
+      else dp[i+1][w] = dp[i][w];
+    }
+  }
+
+  cout << dp[n][W] << endl;
+}
+```
+
 # 1. `map`
 
 ## 1.1 基本構文
